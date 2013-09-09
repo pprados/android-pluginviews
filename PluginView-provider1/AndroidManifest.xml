@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="fr.prados.pluginview.provider1"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    android:sharedUserId="fr.prados.pluginview"
+    >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="18" />
+    
+    <application
+        android:allowBackup="true"
+    	android:process="fr.prados.pluginview"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <service
+            android:name=".ProviderService"
+            android:permission="fr.prados.PLUGINVIEW"
+            android:exported="false" 
+            >
+            <intent-filter>
+                <action android:name="fr.prados.pluginview.providers" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </service>
+        
+        <activity
+            android:name=".Provider1Activity"
+            android:label="@string/app_name"
+            android:exported="false" 
+            >
+        </activity>
+        
+    </application>
+
+</manifest>

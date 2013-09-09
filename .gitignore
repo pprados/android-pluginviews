@@ -1,0 +1,15 @@
+bin/
+gen/
+PluginView-client/bin/
+PluginView-client/gen/
+PluginView-provider/bin/
+PluginView-provider/gen/
+PluginView-provider1/bin/
+PluginView-provider1/gen/
+PluginView-provider2/bin/
+PluginView-provider2/gen/
+.codepro/*
+.settings/*
+*~
+local.properties
+.metadata/
